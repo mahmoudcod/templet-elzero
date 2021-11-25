@@ -1,5 +1,6 @@
 :root {
     --main-color: #11d8d8;
+    --secondery-color:#2c4755;
 }
 /*start global rules*/
 * {
@@ -222,9 +223,56 @@ background-color: #f6f6f6;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 20px;
     margin-top: 80px;
-
+    
 }
 .services .services-contact .serv{
     display: flex;
     margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+   .services .services-contact .serv {
+       flex-direction: column;
+       text-align: center;
+       
+    }
+}
+.services .services-contact .serv i{
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+.services .services-contact .serv .text{
+flex: 1;
+}
+.services .services-contact .serv .text h3{
+margin: 0;
+}
+.services .services-contact .serv .text p{
+    color: #777;
+    font-weight: 300px;
+    line-height: 1.8;
+
+}
+.services .services-contact .image img{
+width: 200px;
+height: 320px;
+}
+.services .services-contact .image{
+text-align: center;
+position: relative;
+}
+.services .services-contact .image::before{
+    content: "";
+    background-color: var(--secondery-color);
+    position: absolute;
+    width: 80px;
+    height: calc(100% + 100px);
+    right: 10%;
+    top: -50px;
+    z-index: -1;
+}
+@media (max-width: 1199px) {
+    .image-column{
+        display: none;
+    }
+}
+
