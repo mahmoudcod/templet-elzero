@@ -34,7 +34,7 @@ body{
     position: relative;
 
 }
-@media (max-width: 786px) {
+@media (max-width: 767px) {
     .special-headings{
         font-size: 60px;
     }
@@ -239,33 +239,33 @@ background-color: #f6f6f6;
 
 .services .services-contact{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap: 20px;
     margin-top: 80px;
 }
-.services .services-contact .serv{
+.services .services-contact .srv{
     display: flex;
     margin-bottom: 30px;
 }
 @media (max-width: 768px) {
-   .services .services-contact .serv {
+   .services .services-contact .srv {
        flex-direction: column;
        text-align: center;
        
     }
 }
-.services .services-contact .serv i{
+.services .services-contact .srv i{
     color: var(--main-color);
     flex-basis: 60px;
     font-size: 3rem;
 }
-.services .services-contact .serv .text{
+.services .services-contact .srv .text{
 flex: 1;
 }
-.services .services-contact .serv .text h3{
+.services .services-contact .srv .text h3{
 margin: 0;
 }
-.services .services-contact .serv .text p{
+.services .services-contact .srv .text p{
     color: #777;
     font-weight: 300px;
     line-height: 1.8;
